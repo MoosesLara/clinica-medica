@@ -3,15 +3,6 @@ import { testimonialsData } from '../../data/content';
 import { motion } from 'framer-motion';
 
 export const PatientTestimonials: React.FC = () => {
-  const containerVariants: any = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-  };
-  
-  const itemVariants: any = {
-    hidden: { opacity: 0, scale: 0.9, y: 20 },
-    visible: { opacity: 1, scale: 1, y: 0, transition: { type: 'spring', damping: 20 } }
-  };
 
   return (
     <section className="py-20 bg-slate-50 overflow-hidden" data-purpose="patient-reviews" id="testimonios">
