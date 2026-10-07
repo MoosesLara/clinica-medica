@@ -1,0 +1,40 @@
+{
+  "header": {
+    "emergency": "Guardias y Urgencias 24/7",
+    "direct_attention": "Atención Directa",
+    "nav_home": "Inicio",
+    "nav_clinics": "Sedes Clínicas",
+    "nav_specialties": "Especialidades",
+    "nav_team": "Trayectoria & Equipo",
+    "nav_testimonials": "Testimonios",
+    "nav_contact": "Contacto",
+    "btn_book": "Agendar Consulta",
+    "north_tower": "Torre Médica Norte",
+    "south_hospital": "H. Quirúrgico Sur"
+  },
+  "hero": {
+    "badge": "Fellow del American College of Surgeons (FACS) | Colegiado Nº 2804911",
+    "title_main": "Cirugía de Alta Precisión y",
+    "title_highlight": "Cuidado Humano.",
+    "description": "Atención compasiva y precisión quirúrgica de excelencia. Más de dos décadas dedicadas a la cirugía mínimamente invasiva, laparoscopia avanzada y recuperación postoperatoria acelerada en las dos clínicas más prestigiosas de la región.",
+    "btn_book": "Reservar Cita Quirúrgica",
+    "btn_locations": "Ver Sedes y Horarios",
+    "reviews_rating": "4.9 / 5.0",
+    "reviews_text": "Respaldado por más de 1,200 reseñas auditadas de pacientes",
+    "card_badge": "Jefe de Servicio Quirúrgico",
+    "card_name": "Dr. Alejandro Morales, MD, FACS",
+    "card_desc": "Especialista en Cirugía General y Digestiva Avanzada",
+    "eras_protocol": "Protocolo ERAS",
+    "eras_desc": "Alta en 24-48 Horas",
+    "tech_title": "Quirófanos Híbridos",
+    "tech_desc": "Tecnología 4K y Laparoscopia 3D en ambas sedes.",
+    "metrics_years": "Años de Trayectoria",
+    "metrics_years_desc": "Formación continua internacional",
+    "metrics_surgeries": "Cirugías Realizadas",
+    "metrics_surgeries_desc": "Procedimientos de alta y media complejidad",
+    "metrics_success": "Éxito Quirúrgico",
+    "metrics_success_desc": "Mínima tasa de complicaciones",
+    "metrics_locations": "Sedes Hospitalarias",
+    "metrics_locations_desc": "Equipamiento tecnológico de vanguardia"
+  }
+}

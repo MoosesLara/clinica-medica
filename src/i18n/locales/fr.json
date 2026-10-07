@@ -1,0 +1,40 @@
+{
+  "header": {
+    "emergency": "Urgences 24/7",
+    "direct_attention": "Ligne Directe",
+    "nav_home": "Accueil",
+    "nav_clinics": "Nos Cliniques",
+    "nav_specialties": "Spécialités",
+    "nav_team": "Parcours & Équipe",
+    "nav_testimonials": "Témoignages",
+    "nav_contact": "Contact",
+    "btn_book": "Prendre Rendez-vous",
+    "north_tower": "Tour Médicale Nord",
+    "south_hospital": "Hôpital Chirurgical Sud"
+  },
+  "hero": {
+    "badge": "Fellow de l'American College of Surgeons (FACS) | Licence Nº 2804911",
+    "title_main": "Chirurgie de Haute Précision et",
+    "title_highlight": "Soins Humains.",
+    "description": "Des soins empreints de compassion et une précision chirurgicale d'excellence. Plus de deux décennies consacrées à la chirurgie mini-invasive, à la laparoscopie avancée et à la récupération postopératoire accélérée dans les deux cliniques les plus prestigieuses de la région.",
+    "btn_book": "Réserver une Consultation",
+    "btn_locations": "Voir Cliniques et Horaires",
+    "reviews_rating": "4.9 / 5.0",
+    "reviews_text": "Soutenu par plus de 1 200 avis de patients audités",
+    "card_badge": "Chef du Service de Chirurgie",
+    "card_name": "Dr. Alejandro Morales, MD, FACS",
+    "card_desc": "Spécialiste en Chirurgie Générale et Digestive Avancée",
+    "eras_protocol": "Protocole ERAS",
+    "eras_desc": "Sortie en 24-48 Heures",
+    "tech_title": "Blocs Opératoires Hybrides",
+    "tech_desc": "Technologie 4K et Laparoscopie 3D dans nos deux cliniques.",
+    "metrics_years": "Années d'Expérience",
+    "metrics_years_desc": "Formation internationale continue",
+    "metrics_surgeries": "Chirurgies Réalisées",
+    "metrics_surgeries_desc": "Interventions de haute et moyenne complexité",
+    "metrics_success": "Succès Chirurgical",
+    "metrics_success_desc": "Taux de complication minime",
+    "metrics_locations": "Centres Hospitaliers",
+    "metrics_locations_desc": "Équipement technologique de pointe"
+  }
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-brand-navy: #0b2038;
+  --color-brand-navyLight: #16385d;
+  --color-brand-sky: #0284c7;
+  --color-brand-skyLight: #e0f2fe;
+  --color-brand-emerald: #059669;
+  --color-brand-emeraldLight: #ecfdf5;
+  --color-brand-surface: #f8fafc;
+  --shadow-soft: 0 10px 30px -5px rgba(15, 41, 66, 0.06);
+  --shadow-elevated: 0 20px 40px -10px rgba(15, 41, 66, 0.12);
+}
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .hero-gradient {
+    background: radial-gradient(120% 80% at 75% 20%, #e8f4fc 0%, #f6faff 50%, #ffffff 100%);
+  }
+  .badge-glow {
+    box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
+  }
+  
+  .animate-marquee {
+    animation: marquee 50s linear infinite;
+  }
+  
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 1rem)); } /* Accounts for gap-8 (2rem) */
+}

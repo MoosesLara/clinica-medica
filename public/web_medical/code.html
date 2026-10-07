@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Alejandro Morales | Aura Surgical - Cirugía de Alta Precisión</title>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#0b2038',
+              navyLight: '#16385d',
+              sky: '#0284c7',
+              skyLight: '#e0f2fe',
+              emerald: '#059669',
+              emeraldLight: '#ecfdf5',
+              surface: '#f8fafc',
+            }
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(15, 41, 66, 0.06)',
+            'elevated': '0 20px 40px -10px rgba(15, 41, 66, 0.12)',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-gradient {
+      background: radial-gradient(120% 80% at 75% 20%, #e8f4fc 0%, #f6faff 50%, #ffffff 100%);
+    }
+    .badge-glow {
+      box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-[#fcfdfd] text-slate-700 antialiased font-sans selection:bg-brand-sky selection:text-white">
+<!-- BEGIN: TopBar -->
+<aside class="bg-brand-navy text-slate-300 text-xs py-2 px-6 border-b border-white/10 hidden md:block" data-purpose="utility-header">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<!-- Direct Info -->
+<div class="flex items-center space-x-6">
+<span class="flex items-center gap-2">
+<i class="fa-solid fa-hospital text-brand-sky"></i>
+<span>Atención Hospitalaria Quirúrgica Centralizada</span>
+</span>
+<span class="text-slate-500">|</span>
+<span class="flex items-center gap-2">
+<i class="fa-regular fa-clock text-brand-emerald"></i>
+<span>Guardias Médicas y Urgencias: Activas 24/7</span>
+</span>
+</div>
+<!-- Contact Channels -->
+<div class="flex items-center space-x-6">
+<a class="hover:text-white flex items-center gap-1.5 transition" href="tel:+34910000000">
+<i class="fa-solid fa-phone-volume text-brand-sky"></i>
+<span class="font-semibold text-slate-200">Urgencias Quirúrgicas: +34 910 882 100</span>
+</a>
+<div class="flex items-center space-x-2 pl-4 border-l border-slate-700">
+<a class="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-sky hover:text-white transition" href="#"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a>
+<a class="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-sky hover:text-white transition" href="#"><i class="fa-brands fa-instagram text-[10px]"></i></a>
+</div>
+</div>
+</div>
+</aside>
+<!-- END: TopBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 glass-effect border-b border-slate-200/80 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-navy to-brand-sky flex items-center justify-center text-white shadow-md shadow-brand-sky/20 group-hover:scale-105 transition-transform duration-300">
+<i class="fa-solid fa-staff-snake text-xl"></i>
+</div>
+<div>
+<span class="text-xl font-extrabold tracking-tight text-brand-navy block leading-none">Aura<span class="text-brand-sky">Surgical</span></span>
+<span class="text-[10px] uppercase font-bold tracking-wider text-slate-500 block mt-1">Dr. Alejandro Morales · Cirujano</span>
+</div>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+<a class="text-brand-sky font-bold transition" href="#hero">Inicio</a>
+<a class="hover:text-brand-navy transition flex items-center gap-1" href="#sedes">
+          Sedes Clínicas
+          <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-blue-50 text-brand-sky">2 Sedes</span>
+</a>
+<a class="hover:text-brand-navy transition" href="#especialidades">Especialidades</a>
+<a class="hover:text-brand-navy transition" href="#trayectoria">Trayectoria &amp; Equipo</a>
+<a class="hover:text-brand-navy transition" href="#testimonios">Testimonios</a>
+<a class="hover:text-brand-navy transition" href="#contacto">Contacto</a>
+</nav>
+<!-- Header CTAs & Location Picker -->
+<div class="flex items-center gap-3">
+<div class="hidden xl:flex items-center bg-slate-100 rounded-lg p-1 text-xs font-semibold text-slate-600">
+<button class="px-2.5 py-1 rounded bg-white text-brand-navy shadow-sm">Torre Médica Norte</button>
+<button class="px-2.5 py-1 text-slate-500 hover:text-slate-800 transition">H. Quirúrgico Sur</button>
+</div>
+<a class="inline-flex items-center gap-2 bg-brand-sky hover:bg-sky-600 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-brand-sky/25 hover:shadow-lg hover:shadow-brand-sky/40 transition duration-200" href="#cita">
+<i class="fa-regular fa-calendar-check text-xs"></i>
+<span>Agendar Consulta</span>
+</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative hero-gradient pt-8 pb-20 overflow-hidden" data-purpose="hero-banner" id="hero">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-12 gap-12 items-center min-h-[580px]">
+<!-- Left Column: Hero Text Content -->
+<div class="lg:col-span-7 space-y-6 pt-4 lg:pt-0">
+<!-- Trust Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-sky-100 shadow-sm text-xs font-semibold text-brand-navy">
+<span class="w-2 h-2 rounded-full bg-brand-emerald animate-pulse"></span>
+<span>Fellow del American College of Surgeons (FACS)</span>
+<span class="text-slate-300">|</span>
+<span class="text-brand-sky">Colegiado Nº 2804911</span>
+</div>
+<!-- Main Heading -->
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy leading-[1.12] tracking-tight">
+              Cirugía de Alta Precisión y <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-sky to-sky-600">Cuidado Humano.</span>
+</h1>
+<p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+              Atención compasiva y precisión quirúrgica de excelencia. Más de dos décadas dedicadas a la cirugía mínimamente invasiva, laparoscopia avanzada y recuperación postoperatoria acelerada en las dos clínicas más prestigiosas de la región.
+            </p>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-7 py-3.5 bg-brand-navy hover:bg-brand-navyLight text-white rounded-xl font-bold text-sm shadow-xl shadow-brand-navy/20 hover:shadow-brand-navy/30 transition flex items-center gap-2" href="#cita">
+<span>Reservar Cita Quirúrgica</span>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+</a>
+<a class="px-6 py-3.5 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 rounded-xl font-semibold text-sm shadow-sm transition flex items-center gap-2" href="#sedes">
+<i class="fa-solid fa-location-dot text-brand-sky"></i>
+<span>Ver Sedes y Horarios</span>
+</a>
+</div>
+<!-- Verified Doctors Floating Mini-Card -->
+<div class="pt-6 border-t border-slate-200/80 flex items-center gap-4">
+<div class="flex -space-x-2">
+<img alt="Dra. Colaboradora" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDfgchyfLvlucclR_1cnUMz-atye_ckDhtmrrHgRsKEt_uI8kG4_vrcdg1UU8HB2KqbB4Dtc16-cgYMLoDU_vsNIHB7cD67E9UTdD8QnSq9jOpaZ1KpNPHgjKOpht2uYb_Rxa69HoLRR0Ef3KaixMtOPO3pbF3ltPV3EMglrdPeaRvQHbi7BHICEKM4VWJFv6LskG3gNHpMrCSYzJ4Co_Y3ooboURT6X8Dhiq-HOcu"/>
+<img alt="Dr. Morales Cirujano" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWLCzg93K0OUVPSWRahJIZQrBe3C__NQrtkYY9SKePKR0AgmZTK1fnOMg54nQyk9ctXrEN5PctY6XsMW8FZ8z0r474Tnvi_qe99hcVy7QppkAYfJbE9Fpd0fbXFIL5Ztb8x8zN0jvgg8mcRJUrjOPGm3bsma4yHpfN93Ynxrrg54rZC7jcyrOjRIZj-4UWAbiywg4nkSJMOaysWhlHmh5-kNAntnJP62RknM7FEnNv"/>
+<img alt="Dr. Anestesiólogo" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiayam455Fga_M-Ht-La896KMYRppmsHGg-DDFz_BWf7SqRaU2MVGmeNNCyh8exTM_PzLxg-vuWUOGRQCvQdnSHJIIi87-2addn2FiZw3TD2WoQ3TZ1Y8C0kR3EVvKO8025bJ5B_S-dNQI-ajDPoopiIuHriMdxCb5qMwUHgLWlIgwEd6cQr08tn-2CDGDO0r0mhJ0RwPitYmQXIkkffESl1gnlBLS-oYU_TYR61Xv"/>
+</div>
+<div class="text-xs">
+<div class="flex items-center gap-1 text-amber-400 font-bold">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<span class="text-slate-800 ml-1 font-bold">4.9 / 5.0</span>
+</div>
+<p class="text-slate-500 mt-0.5">Respaldado por más de 1,200 reseñas auditadas de pacientes</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Hero Visuals Inspired by Healthcare References -->
+<div class="lg:col-span-5 relative flex justify-center items-end">
+<div class="relative w-full max-w-md">
+<!-- Geometric Accent Backdrop -->
+<div class="absolute -top-6 -right-6 w-72 h-72 bg-sky-200/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-6 -left-6 w-72 h-72 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Main Hero Image Frame -->
+<div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
+<img alt="Dr. Alejandro Morales en Consulta Quirúrgica" class="w-full h-[480px] object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHaZMHPf6eqeTpj5F00o2H4SLkqBQsSoyYF2trEcDzO5x6yuPTdEtxDHvliK3m0qRPDiOjCKxytkFQEFwZu4lhv64_-Zo5S_1_W6k2HCF1g5Z_wLIOWG01_OoSI1BWw6B23LU07jhrM77MRVXueBgniYkiNua8wXp_rLNY3ZGF6IbiOSrso44b-SgcYMHuB0Ji39ryoEMa0uGmW8F6DRGfvmxPAVmTpWgnkIpjvKSA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white">
+<span class="bg-brand-sky/90 backdrop-blur-sm text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md inline-block mb-1">Jefe de Servicio Quirúrgico</span>
+<p class="font-bold text-lg leading-tight">Dr. Alejandro Morales, MD, FACS</p>
+<p class="text-xs text-slate-200">Especialista en Cirugía General y Digestiva Avanzada</p>
+</div>
+</div>
+<!-- Floating Quick Badge 1: Top Right (Inspiración Healthcare Plus) -->
+<div class="absolute -top-3 -right-3 bg-white p-3.5 rounded-2xl shadow-elevated border border-slate-100 flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 text-brand-emerald flex items-center justify-center font-bold">
+<i class="fa-solid fa-shield-virus text-lg"></i>
+</div>
+<div>
+<div class="text-[11px] text-slate-400 font-bold uppercase tracking-wider">Protocolo ERAS</div>
+<div class="text-xs font-bold text-brand-navy">Alta en 24-48 Horas</div>
+</div>
+</div>
+<!-- Floating Quick Badge 2: Mid Left (Inspiración ProHealth) -->
+<div class="absolute bottom-20 -left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-elevated border border-slate-100 max-w-[210px] hidden sm:block">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-sky"></span>
+</span>
+<span class="text-[11px] font-bold text-slate-800">Quirófanos Híbridos</span>
+</div>
+<p class="text-[11px] text-slate-500 leading-snug">Tecnología 4K y Laparoscopia 3D en ambas sedes.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Metrics Bar (Estilo Pill de ProHealth https://lh3.googleusercontent.com/aida-public/AB6AXuCNX31l1PXQSa-Qr1axAz_KZgnaZlahJrZDOfIFU2MaKbFlRvYnPagGbI7pbYrOEzp4RYH66b6DxjnZyx8WhEgUn2bqxbECW2b5cWg-6nfnJTvwdolfEMMFFShUJf5r9ZFOGxGE7puUJi0DOLZB1bJ58JSFVJAtEoXR_1ytMVBmWwLwN0tfIZLrPfpgFJLoArHpwLxOuz-VB5e_M9J-6etOzd_ZHAi35NHJRq8myZihwSpkiBgcmj4Pdg) -->
+<div class="mt-14 -mb-10 relative z-20" data-purpose="metrics-counter-bar">
+<div class="bg-white rounded-2xl sm:rounded-3xl shadow-xl shadow-brand-navy/5 border border-slate-100 p-6 sm:p-8">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y lg:divide-y-0 lg:divide-x divide-slate-100">
+<!-- Metric Item 1 -->
+<div class="text-center pt-3 lg:pt-0">
+<div class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">20+</div>
+<div class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Años de Trayectoria</div>
+<p class="text-[11px] text-slate-400 mt-0.5">Formación continua internacional</p>
+</div>
+<!-- Metric Item 2 -->
+<div class="text-center pt-3 lg:pt-0">
+<div class="text-3xl sm:text-4xl font-extrabold text-brand-sky tracking-tight">4,500+</div>
+<div class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Cirugías Realizadas</div>
+<p class="text-[11px] text-slate-400 mt-0.5">Procedimientos de alta y media complejidad</p>
+</div>
+<!-- Metric Item 3 -->
+<div class="text-center pt-3 lg:pt-0">
+<div class="text-3xl sm:text-4xl font-extrabold text-brand-emerald tracking-tight">99.2%</div>
+<div class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Éxito Quirúrgico</div>
+<p class="text-[11px] text-slate-400 mt-0.5">Mínima tasa de complicaciones</p>
+</div>
+<!-- Metric Item 4 -->
+<div class="text-center pt-3 lg:pt-0">
+<div class="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">2</div>
+<div class="text-xs sm:text-sm font-semibold text-slate-600 mt-1">Sedes Hospitalarias</div>
+<p class="text-[11px] text-slate-400 mt-0.5">Equipamiento tecnológico de vanguardia</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: ClinicsDualSection -->
+<section class="pt-28 pb-20 bg-slate-50" data-purpose="clinics-selector" id="sedes">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs uppercase font-extrabold tracking-widest text-brand-sky bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100">Presencia Hospitalaria de Primer Nivel</span>
+<h2 class="text-3xl sm:text-4xl font-bold text-brand-navy mt-3 tracking-tight">Elija su Sede de Atención de Preferencia</h2>
+<p class="text-slate-600 text-sm sm:text-base mt-3">El Dr. Morales opera y pasa consulta exclusivamente en instalaciones con certificación Joint Commission International (JCI) y quirófanos inteligentes.</p>
+</div>
+<!-- Comparative Cards for the 2 Clinics -->
+<div class="grid md:grid-cols-2 gap-8 items-stretch">
+<!-- Sede 1: Torre Médica Norte -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-soft hover:shadow-elevated transition duration-300 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 bg-brand-sky text-white text-[11px] font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+              Sede Central Norte
+            </div>
+<div>
+<div class="flex items-center gap-4 mb-5">
+<div class="w-14 h-14 rounded-2xl bg-sky-50 text-brand-sky flex items-center justify-center text-2xl group-hover:bg-brand-sky group-hover:text-white transition">
+<i class="fa-solid fa-hospital-user"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-brand-navy">Clínica Metropolitana</h3>
+<p class="text-xs font-semibold text-slate-500">Torre Quirúrgica Especializada · Planta 4</p>
+</div>
+</div>
+<div class="space-y-3.5 text-sm text-slate-600 border-t border-b border-slate-100 py-5 my-2">
+<div class="flex items-start gap-3">
+<i class="fa-solid fa-location-pin text-brand-sky mt-1"></i>
+<span>Paseo de la Castellana 182, 28046 Madrid</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="fa-regular fa-clock text-brand-sky"></i>
+<span>Consultas: Lunes, Miércoles y Jueves (09:00 - 15:00)</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-bed-pulse text-brand-sky"></i>
+<span>4 Quirófanos Integrados · UCI Adultos Nivel III</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-square-parking text-brand-sky"></i>
+<span>Parking exclusivo para pacientes y acceso adaptado</span>
+</div>
+</div>
+</div>
+<div class="pt-6 flex flex-col sm:flex-row items-center gap-3">
+<a class="w-full sm:w-auto flex-1 text-center py-3 px-5 rounded-xl bg-brand-sky hover:bg-sky-600 text-white font-bold text-sm shadow transition" href="#cita">
+                Agendar en Sede Metropolitana
+              </a>
+<a class="w-full sm:w-auto px-4 py-3 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 font-semibold text-sm text-center transition" href="#">
+                Ver en Mapa
+              </a>
+</div>
+</div>
+<!-- Sede 2: Hospital Quirúrgico Sur -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200/90 shadow-soft hover:shadow-elevated transition duration-300 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 bg-brand-navy text-white text-[11px] font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+              Sede Alta Complejidad Sur
+            </div>
+<div>
+<div class="flex items-center gap-4 mb-5">
+<div class="w-14 h-14 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl group-hover:bg-brand-emerald group-hover:text-white transition">
+<i class="fa-solid fa-microscope"></i>
+</div>
+<div>
+<h3 class="text-xl font-bold text-brand-navy">Clínica San Gabriel</h3>
+<p class="text-xs font-semibold text-slate-500">Unidad de Cirugía Mayor Ambulatoria e Ingreso</p>
+</div>
+</div>
+<div class="space-y-3.5 text-sm text-slate-600 border-t border-b border-slate-100 py-5 my-2">
+<div class="flex items-start gap-3">
+<i class="fa-solid fa-location-pin text-brand-emerald mt-1"></i>
+<span>Av. de Europa 45, Edificio A, 28224 Pozuelo de Alarcón</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="fa-regular fa-clock text-brand-emerald"></i>
+<span>Consultas: Martes y Viernes (14:00 - 20:30)</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-dna text-brand-emerald"></i>
+<span>Unidad Robótica &amp; Diagnóstico por Imagen Avanzado</span>
+</div>
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-hand-holding-medical text-brand-emerald"></i>
+<span>Suites privadas de recuperación y acompañante</span>
+</div>
+</div>
+</div>
+<div class="pt-6 flex flex-col sm:flex-row items-center gap-3">
+<a class="w-full sm:w-auto flex-1 text-center py-3 px-5 rounded-xl bg-brand-navy hover:bg-brand-navyLight text-white font-bold text-sm shadow transition" href="#cita">
+                Agendar en Clínica San Gabriel
+              </a>
+<a class="w-full sm:w-auto px-4 py-3 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 font-semibold text-sm text-center transition" href="#">
+                Ver en Mapa
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ClinicsDualSection -->
+<!-- BEGIN: SpecialtiesSection -->
+<section class="py-20 bg-white" data-purpose="surgical-departments" id="especialidades">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div class="max-w-2xl">
+<span class="text-xs uppercase font-extrabold tracking-widest text-brand-sky bg-sky-50 px-3 py-1 rounded-full">Cartera Quirúrgica</span>
+<h2 class="text-3xl sm:text-4xl font-bold text-brand-navy mt-3 tracking-tight">Procedimientos y Especialidades</h2>
+<p class="text-slate-600 text-sm sm:text-base mt-2">Tecnología de última generación enfocada en reducir el dolor postquirúrgico y acelerar el retorno a su vida cotidiana.</p>
+</div>
+<div class="mt-4 md:mt-0">
+<a class="inline-flex items-center gap-2 text-sm font-bold text-brand-sky hover:text-sky-700" href="#cita">
+<span>Consultar caso particular</span>
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- Specialties Grid (Inspirado en el Department Grid de ProHealth https://lh3.googleusercontent.com/aida-public/AB6AXuBBsSikbrjKNlFkJURBam0yxothYuypIOynSNakcqFvmccTQg4RaEqFY99ptnOql0TfyExCDgp3zJnz4kc6TOfFy5WLXMDGQCWew8Vfizr8lshy_Dc3CABBep8-K6KH-r3mA4_1opkF30nPnr9HadA8-M9hhkAVD9X28ovkRPLnQFiX-72SSU_ejX-pjXtQwGxhtDMTEOhgAgUUFZ0NCAykSoDxXhujIR4CAPpf2Rma5ZM4Uy_rYv478A) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="p-7 rounded-2xl border border-slate-100 hover:border-sky-200 bg-white hover:bg-slate-50/50 hover:shadow-soft transition group">
+<div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-sky flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<h3 class="text-lg font-bold text-brand-navy group-hover:text-brand-sky transition">Cirugía Laparoscópica Avanzada</h3>
+<p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">Incisión mínima para patologías vesiculares, hernias inguinales e hiatales con retorno sociolaboral en 72 horas.</p>
+<div class="mt-4 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-500">
+<span class="text-brand-emerald mr-2"><i class="fa-solid fa-check"></i></span> Mínima cicatriz
+            </div>
+</article>
+<!-- Card 2 (Highlighted Card like in ProHealth) -->
+<article class="p-7 rounded-2xl border border-brand-sky bg-gradient-to-br from-brand-sky to-sky-700 text-white shadow-lg shadow-brand-sky/20 transition group">
+<div class="w-12 h-12 rounded-xl bg-white/20 text-white flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-stethoscope"></i>
+</div>
+<h3 class="text-lg font-bold text-white">Cirugía Oncológica Digestiva</h3>
+<p class="text-sky-100 text-xs sm:text-sm mt-2 leading-relaxed">Abordaje multidisciplinar de neoplasias de colon, recto, estómago y páncreas con estadiaje quirúrgico de precisión.</p>
+<div class="mt-4 pt-4 border-t border-white/20 flex items-center text-xs font-semibold text-sky-100">
+<span class="text-white mr-2"><i class="fa-solid fa-check"></i></span> Comités de tumores semanales
+            </div>
+</article>
+<!-- Card 3 -->
+<article class="p-7 rounded-2xl border border-slate-100 hover:border-sky-200 bg-white hover:bg-slate-50/50 hover:shadow-soft transition group">
+<div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-sky flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-heart-pulse"></i>
+</div>
+<h3 class="text-lg font-bold text-brand-navy group-hover:text-brand-sky transition">Pared Abdominal Compleja</h3>
+<p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">Reparación de eventraciones gigantes, diástasis de rectos y reconstrucción biológica funcional con mallas biocompatibles.</p>
+<div class="mt-4 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-500">
+<span class="text-brand-emerald mr-2"><i class="fa-solid fa-check"></i></span> Técnica TAR sin tensión
+            </div>
+</article>
+<!-- Card 4 -->
+<article class="p-7 rounded-2xl border border-slate-100 hover:border-sky-200 bg-white hover:bg-slate-50/50 hover:shadow-soft transition group">
+<div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-sky flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-user-doctor"></i>
+</div>
+<h3 class="text-lg font-bold text-brand-navy group-hover:text-brand-sky transition">Cirugía Endocrina y Tiroidea</h3>
+<p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">Tiroidectomías y paratiroidectomías con monitorización intraoperatoria del nervio recurrente para preservar la voz.</p>
+<div class="mt-4 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-500">
+<span class="text-brand-emerald mr-2"><i class="fa-solid fa-check"></i></span> Neuromonitorización continua
+            </div>
+</article>
+<!-- Card 5 -->
+<article class="p-7 rounded-2xl border border-slate-100 hover:border-sky-200 bg-white hover:bg-slate-50/50 hover:shadow-soft transition group">
+<div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-sky flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-disease"></i>
+</div>
+<h3 class="text-lg font-bold text-brand-navy group-hover:text-brand-sky transition">Proctología Láser Avanzada</h3>
+<p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">Tratamiento sin dolor de hemorroides, fístulas y fisuras mediante tecnología láser de diodo en régimen ambulatorio.</p>
+<div class="mt-4 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-500">
+<span class="text-brand-emerald mr-2"><i class="fa-solid fa-check"></i></span> Sin ingreso hospitalario
+            </div>
+</article>
+<!-- Card 6 -->
+<article class="p-7 rounded-2xl border border-slate-100 hover:border-sky-200 bg-white hover:bg-slate-50/50 hover:shadow-soft transition group">
+<div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-sky flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-truck-medical"></i>
+</div>
+<h3 class="text-lg font-bold text-brand-navy group-hover:text-brand-sky transition">Urgencias Quirúrgicas 24/7</h3>
+<p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">Atención inmediata de apendicitis aguda, colecistitis, oclusiones intestinales y perforaciones en ambas clínicas.</p>
+<div class="mt-4 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-slate-500">
+<span class="text-brand-emerald mr-2"><i class="fa-solid fa-check"></i></span> Respuesta en menos de 45 min
+            </div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: SpecialtiesSection -->
+<!-- BEGIN: AboutAndCredentials -->
+<section class="py-20 bg-slate-50/80 border-y border-slate-200/70" data-purpose="surgeon-biography" id="trayectoria">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<!-- Image and Certifications Mosaic -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white">
+<img alt="Dr. Alejandro Morales en Quirofano" class="w-full h-[460px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg60DOjTLPRHTymMEDHdL9zp16_7osn-Nvo12t5eg15Sa5ChGfWJ0TwCl52wLhyTOx7pRVvEpvN9OZN8te1spMxbTFn8vlIN533SDm2W3goDPIOMmUBljqFY7lYa5Xc_Wo8d9KgyK7kNAiYMKSKvInmim5FABNqC5RNE8ErgUJaHwC0R9PO-gj9sIRksSr-t5-yqtq2STK7eNpr7DQNOoTsVSpPS1IwXegxaTBMoQq"/>
+</div>
+<div class="absolute -bottom-6 -right-4 bg-brand-navy text-white p-5 rounded-2xl shadow-xl max-w-xs border border-white/10 hidden sm:block">
+<div class="flex items-center gap-3">
+<i class="fa-solid fa-award text-3xl text-brand-sky"></i>
+<div>
+<div class="font-bold text-sm">Acreditación Europea EBSQ</div>
+<div class="text-[11px] text-slate-300">European Board of Surgery Qualification</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bio text and bullets -->
+<div class="lg:col-span-7 space-y-6">
+<span class="text-xs uppercase font-extrabold tracking-widest text-brand-sky bg-sky-50 px-3 py-1 rounded-full">Experiencia y Compromiso</span>
+<h2 class="text-3xl sm:text-4xl font-bold text-brand-navy tracking-tight">Dr. Alejandro Morales</h2>
+<h4 class="text-lg font-semibold text-slate-600 -mt-3">Cirujano General y del Aparato Digestivo</h4>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Formado en el Hospital Universitario La Paz de Madrid y con estancias formativas en el Memorial Sloan Kettering Cancer Center (Nueva York) y el IRCAD (Estrasburgo). Su vocación se asienta en dos pilares innegociables: rigor técnico milimétrico y empatía constante con el paciente y su familia.
+            </p>
+<!-- Accreditations Logos / Badges Grid -->
+<div class="grid sm:grid-cols-2 gap-4 pt-2">
+<div class="p-3.5 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3">
+<i class="fa-solid fa-graduation-cap text-brand-sky text-xl"></i>
+<span class="text-xs font-semibold text-slate-700">Doctor en Cirugía (Cum Laude por UAM)</span>
+</div>
+<div class="p-3.5 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3">
+<i class="fa-solid fa-certificate text-brand-emerald text-xl"></i>
+<span class="text-xs font-semibold text-slate-700">Miembro Asociación Española de Cirujanos</span>
+</div>
+<div class="p-3.5 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3">
+<i class="fa-solid fa-globe text-brand-sky text-xl"></i>
+<span class="text-xs font-semibold text-slate-700">Fellow de la International Hepato-Biliary Ass.</span>
+</div>
+<div class="p-3.5 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3">
+<i class="fa-solid fa-book-medical text-brand-emerald text-xl"></i>
+<span class="text-xs font-semibold text-slate-700">+45 Artículos indexados en PubMed</span>
+</div>
+</div>
+<!-- Philosophy Quote -->
+<blockquote class="p-4 rounded-xl border-l-4 border-brand-sky bg-sky-50/50 text-slate-700 text-xs sm:text-sm italic">
+              "El éxito de una cirugía no se mide únicamente en el quirófano, sino en cómo el paciente recupera su bienestar, su tranquilidad y su autonomía con el menor impacto físico y emocional posible."
+            </blockquote>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutAndCredentials -->
+<!-- BEGIN: QuickAppointmentSection -->
+<section class="py-20 bg-white" data-purpose="appointment-booking-module" id="cita">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-gradient-to-tr from-brand-navy via-brand-navyLight to-slate-900 rounded-3xl shadow-2xl p-8 sm:p-12 text-white relative overflow-hidden">
+<!-- Decorative Glow circles -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-brand-sky/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid lg:grid-cols-12 gap-10 items-center relative z-10">
+<!-- Left instructions -->
+<div class="lg:col-span-5 space-y-4">
+<span class="text-xs uppercase font-extrabold tracking-widest text-brand-sky bg-white/10 px-3 py-1 rounded-full inline-block">Sin Esperas Innecesarias</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Solicite su Primera Consulta o Segunda Opinión</h2>
+<p class="text-slate-300 text-sm leading-relaxed">
+                Seleccione la sede de su conveniencia. Nuestro equipo de coordinación clínica se comunicará con usted en menos de 2 horas para confirmar la cita y recopilar informes previos si los tuviera.
+              </p>
+<div class="pt-4 space-y-3 text-xs text-slate-300">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-check text-brand-emerald"></i>
+<span>Atención directa con el cirujano titular (sin intermediarios)</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-check text-brand-emerald"></i>
+<span>Aceptamos principales aseguradoras de salud y privados</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-check text-brand-emerald"></i>
+<span>Opción de videoconsulta previa para pacientes internacionales</span>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Styled Form -->
+<div class="lg:col-span-7 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl" data-purpose="appointment-form">
+<form action="#" class="space-y-4" method="POST" onsubmit="event.preventDefault(); alert('Solicitud recibida. Nos comunicaremos de inmediato.');">
+<div class="grid sm:grid-cols-2 gap-4">
+<!-- Name -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre y Apellidos *</label>
+<input class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2.5" placeholder="Ej. Carlos Mendoza" required="" type="text"/>
+</div>
+<!-- Phone -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Teléfono Móvil *</label>
+<input class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2.5" placeholder="+34 600 000 000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid sm:grid-cols-2 gap-4">
+<!-- Clinic Selection -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Sede Hospitalaria *</label>
+<select class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2.5 text-slate-700">
+<option value="metropolitana">Clínica Metropolitana (Torre Norte)</option>
+<option value="sangabriel">Clínica San Gabriel (Sede Sur)</option>
+<option value="indiferente">Cualquiera / Primera fecha libre</option>
+<option value="online">Videoconsulta Telemática</option>
+</select>
+</div>
+<!-- Specialty / Motivo -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Motivo Quirúrgico</label>
+<select class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2.5 text-slate-700">
+<option value="hernia">Hernia inguinal / abdominal</option>
+<option value="vesicula">Vesícula biliar / Cólico</option>
+<option value="segunda_opinion">Segunda opinión diagnóstica</option>
+<option value="oncologia">Cirugía Oncológica digestiva</option>
+<option value="proctologia">Patología anal / Proctología</option>
+<option value="otro">Otra patología quirúrgica</option>
+</select>
+</div>
+</div>
+<div class="grid sm:grid-cols-2 gap-4">
+<!-- Insurance -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Modalidad de Pago / Seguro</label>
+<select class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2.5 text-slate-700">
+<option value="privado">Privado / Sin Seguro</option>
+<option value="sanitas">Sanitas</option>
+<option value="adeslas">SegurCaixa Adeslas</option>
+<option value="asisa">Asisa</option>
+<option value="mapfre">Mapfre</option>
+<option value="otro">Otras aseguradoras de reembolso</option>
+</select>
+</div>
+<!-- Date Preference -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Preferencia Horaria</label>
+<select class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2.5 text-slate-700">
+<option value="manana">Mañanas (09:00 - 14:00)</option>
+<option value="tarde">Tardes (15:00 - 20:30)</option>
+<option value="urgente">Lo antes posible</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Observaciones breves o síntomas</label>
+<textarea class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-sky focus:ring-brand-sky px-3 py-2" placeholder="Describa brevemente si cuenta con ecografías, TACs o diagnósticos previos..." rows="2"></textarea>
+</div>
+<button class="w-full py-3.5 bg-brand-sky hover:bg-sky-600 text-white font-extrabold text-sm rounded-xl shadow-lg shadow-brand-sky/30 transition flex items-center justify-center gap-2" type="submit">
+<i class="fa-regular fa-paper-plane"></i>
+<span>Confirmar Solicitud de Consulta</span>
+</button>
+<p class="text-[11px] text-center text-slate-400">
+                  Cumplimiento RGPD médico y secreto profesional garantizado.
+                </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: QuickAppointmentSection -->
+<!-- BEGIN: PatientTestimonials -->
+<section class="py-20 bg-slate-50" data-purpose="patient-reviews" id="testimonios">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs uppercase font-extrabold tracking-widest text-brand-emerald bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Historias Reales</span>
+<h2 class="text-3xl sm:text-4xl font-bold text-brand-navy mt-3 tracking-tight">La voz de nuestros pacientes intervenidos</h2>
+<p class="text-slate-600 text-sm sm:text-base mt-2">Seguimiento continuo desde el diagnóstico preliminar hasta el alta médica definitiva.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<article class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-soft flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 text-xs gap-1 mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed">
+                "Fui intervenida de vesícula por laparoscopia en la Clínica Metropolitana. A las 24 horas estaba caminando sin dolor en mi casa. La claridad del Dr. Morales para explicar el procedimiento da una serenidad absoluta."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-5 mt-4 border-t border-slate-100">
+<img alt="Beatriz Navarro" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_PU1zDu9AkwftN_ZQtNYQSceHQa3wezfZN3JJnAhEgfaOh5CasHjQrdTguoa0g2uobIwXZtyqYjMPY_OCmIJo9kuYiIYsKGC34q9GVbFGUt1r7Kd3-G1HPIW7s1EB0oX0MW5O5-jbAefo0evOVqrB7s3HtpoFLoQ4WNys2BJvpPr1WF6YnyuH_S677XrlVpNR7W8bI5C8qJ5mkgH4YYdQQDlvV3POkHn6IWFzrBUR"/>
+<div>
+<h4 class="text-xs font-bold text-brand-navy">Beatriz Navarro</h4>
+<p class="text-[11px] text-slate-400">Intervención en Sede Metropolitana</p>
+</div>
+</div>
+</article>
+<!-- Testimonial 2 -->
+<article class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-soft flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 text-xs gap-1 mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed">
+                "Buscaba una segunda opinión para una hernia compleja. En la Clínica San Gabriel me ofrecieron una técnica que minimizó mi tiempo de recuperación. Profesional de matrícula y equipo humano inmejorable."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-5 mt-4 border-t border-slate-100">
+<img alt="Javier Osorio" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuKMoP0WzDhdSOMDHgItoGiJsta3xFu-1AMV2hsk7LvLCLyNGURP_iZ3fD9jyRAS8dYuFy0kSHoURS79zNyLbAbosEwulpPmzK7ilNYvM7KiA2pgEESD1-O6slunY_Up8-bB8adRO1pbd2eOuyJ2ckodFp3z9dy73D0ncc8IDj2RkMxspkmZX1Fk9XX6umCmuslJ18QY82eTfkEDe19cXM4lJV_L0sVtSKiQ6bAZ3r"/>
+<div>
+<h4 class="text-xs font-bold text-brand-navy">Javier Osorio</h4>
+<p class="text-[11px] text-slate-400">Intervención en Clínica San Gabriel</p>
+</div>
+</div>
+</article>
+<!-- Testimonial 3 -->
+<article class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-soft flex flex-col justify-between">
+<div>
+<div class="flex text-amber-400 text-xs gap-1 mb-3">
+<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+</div>
+<p class="text-slate-600 text-sm italic leading-relaxed">
+                "El Dr. Alejandro no solo es un cirujano virtuoso, sino un médico que escucha y se preocupa por tu estado anímico. Su seguimiento postoperatorio vía telefónica y presencial fue impecable."
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-5 mt-4 border-t border-slate-100">
+<img alt="Elena Solís" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHWSGJgQa0UEA0sYEzKia67JFfnuzrsWaYIa28N7j6xEkyVTWdx4VOxa7KAx3SeKvS_oEJTezt8uo1gWWLCqYj0cfWH70o1-ddBKinBMjIPJfEddXgK3DdHGkFDHf7-zKHV7uThhb513Z38N7fSrzNg_B1gX_S8sC2xkkZZwnoHHi1REOZ0RqjEDZrcxiIM-tFFa9LgtAEUSt43Iu-_HQhQwgonHUieTDKjUEfPq7v"/>
+<div>
+<h4 class="text-xs font-bold text-brand-navy">Elena Solís</h4>
+<p class="text-[11px] text-slate-400">Tratamiento Oncológico Preventivo</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: PatientTestimonials -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brand-navy text-slate-400 text-xs pt-16 pb-12 border-t border-white/10" data-purpose="site-footer" id="contacto">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+<!-- Brand identity -->
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-brand-sky flex items-center justify-center text-white font-bold">
+<i class="fa-solid fa-staff-snake"></i>
+</div>
+<span class="text-lg font-bold text-white tracking-tight">Aura<span class="text-brand-sky">Surgical</span></span>
+</div>
+<p class="leading-relaxed text-slate-400">
+            Práctica quirúrgica privada del Dr. Alejandro Morales. Máxima cualificación médica, tecnología hospitalaria certificada y trato personalizado.
+          </p>
+<div class="text-slate-500 text-[11px]">
+            Colegiado Ilustre Colegio Oficial de Médicos de Madrid Nº 2804911.
+          </div>
+</div>
+<!-- Sede 1 Info -->
+<div>
+<h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Clínica Metropolitana (Norte)</h4>
+<p class="mb-2">Paseo de la Castellana 182, Planta 4, 28046 Madrid</p>
+<p class="mb-1"><strong class="text-slate-300">Citas:</strong> +34 910 882 101</p>
+<p><strong class="text-slate-300">Días:</strong> Lunes, Miércoles y Jueves</p>
+</div>
+<!-- Sede 2 Info -->
+<div>
+<h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Clínica San Gabriel (Sur)</h4>
+<p class="mb-2">Av. de Europa 45, Edificio A, 28224 Pozuelo</p>
+<p class="mb-1"><strong class="text-slate-300">Citas:</strong> +34 910 882 102</p>
+<p><strong class="text-slate-300">Días:</strong> Martes y Viernes</p>
+</div>
+<!-- Quick Links & Certifications -->
+<div>
+<h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Canales Directos</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-brand-sky transition" href="#cita">Solicitud de Consulta Online</a></li>
+<li><a class="hover:text-brand-sky transition" href="#sedes">Quirófanos y Hospitalización</a></li>
+<li><a class="hover:text-brand-sky transition" href="#especialidades">Catálogo de Procedimientos</a></li>
+<li><a class="hover:text-white text-emerald-400 font-bold transition" href="tel:+34910882100">Urgencias Quirúrgicas 24h</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+<div>
+          © 2024 Aura Surgical · Dr. Alejandro Morales. Todos los derechos reservados.
+        </div>
+<div class="flex space-x-6">
+<a class="hover:text-slate-300 transition" href="#">Aviso Legal</a>
+<a class="hover:text-slate-300 transition" href="#">Política de Privacidad</a>
+<a class="hover:text-slate-300 transition" href="#">Código Deontológico</a>
+<a class="hover:text-slate-300 transition" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

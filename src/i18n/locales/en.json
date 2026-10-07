@@ -1,0 +1,40 @@
+{
+  "header": {
+    "emergency": "24/7 Emergency & On-Call",
+    "direct_attention": "Direct Line",
+    "nav_home": "Home",
+    "nav_clinics": "Clinic Locations",
+    "nav_specialties": "Specialties",
+    "nav_team": "Career & Team",
+    "nav_testimonials": "Testimonials",
+    "nav_contact": "Contact",
+    "btn_book": "Book Appointment",
+    "north_tower": "North Medical Tower",
+    "south_hospital": "South Surgical Hosp."
+  },
+  "hero": {
+    "badge": "Fellow of the American College of Surgeons (FACS) | Medical License Nº 2804911",
+    "title_main": "High-Precision Surgery &",
+    "title_highlight": "Compassionate Care.",
+    "description": "Compassionate care and surgical precision of excellence. Over two decades dedicated to minimally invasive surgery, advanced laparoscopy, and accelerated postoperative recovery in the region's two most prestigious clinics.",
+    "btn_book": "Book Surgical Appointment",
+    "btn_locations": "View Locations & Hours",
+    "reviews_rating": "4.9 / 5.0",
+    "reviews_text": "Backed by over 1,200 audited patient reviews",
+    "card_badge": "Head of Surgical Services",
+    "card_name": "Dr. Alejandro Morales, MD, FACS",
+    "card_desc": "Specialist in General and Advanced Digestive Surgery",
+    "eras_protocol": "ERAS Protocol",
+    "eras_desc": "Discharge in 24-48 Hours",
+    "tech_title": "Hybrid Operating Rooms",
+    "tech_desc": "4K Technology and 3D Laparoscopy at both locations.",
+    "metrics_years": "Years of Experience",
+    "metrics_years_desc": "Continuous international training",
+    "metrics_surgeries": "Surgeries Performed",
+    "metrics_surgeries_desc": "High and medium complexity procedures",
+    "metrics_success": "Surgical Success",
+    "metrics_success_desc": "Minimal complication rate",
+    "metrics_locations": "Hospital Locations",
+    "metrics_locations_desc": "State-of-the-art technological equipment"
+  }
+}
